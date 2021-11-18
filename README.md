@@ -4,8 +4,8 @@
 2. Создаём оптимизированный продакшн-билд
    npm run build
 
-3. В package.json добавляем после 3ей строки "private" св-во "homepage" (перед "dependencies")
-   со своими значениями ("homepage": "https://corund1976.github.io/goit-react-hw-07-phonebook",)
+3. В package.json добавляем после 3ей строки "private" св-во "homepage" (перед "dependencies") со своими значениями
+   ("homepage": "https://corund1976.github.io/goit-react-hw-07-phonebook",)
    "homepage": "https://myusername.github.io/my-app"
 
 4. Добавляем 2 новых скрипта в package.json
@@ -17,38 +17,32 @@
    npm install --save gh-pages или
    yarn add gh-pages
 
-6. Запускаем деплой
+6. Копируем исходник (папку src) и Запускаем деплой
    npm run deploy
 
-7. Запускаем проект локально
-   npm start или
-   yarn start
+7. Устанавливаем React Redux для связи React с Redux
+   npm i react-redux или
+   yarn add react-redux
 
-8. В index.css в 1й строке импортируем встроенный Normalize
-   @import-normalize;
+8. Устанавливаем Redux Toolkit (ранее назывался "Redux Starter Kit")
+   npm install @reduxjs/toolkit или
+   yarn add @reduxjs/toolkit
 
-9. Устанавливаем React Redux для связи React с Redux
-   npm i react-redux
+9. Устанавливаем axios
+   npm i axios
 
-10. Устанавливаем Redux Toolkit (ранее назывался "Redux Starter Kit").
-    npm install @reduxjs/toolkit или
-    yarn add @reduxjs/toolkit
-
-11. Устанавливаем опционально Logger for Redux
-    npm i redux-logger
-
-12. Устанавливаем json-server
+10. Устанавливаем json-server
     npm i json-server
 
-13. Добавляем 1 новый скрипт с настройками сервера в package.json
+11. Добавляем 1 новый скрипт с настройками сервера в package.json
     "scripts": {
     "api-server": "json-server --port 4040 --delay 300 --watch db.json"
 
-14. Запускаем json-сервер в отедльном окне теерминала
+12. Запускаем json-сервер в отдельном окне терминала
     npm run api-server
 
-15. В браузере переходим по ссылке для просмотра базы данных:
-    http://localhost:4040/contacts
+13. В браузере переходим по ссылке для просмотра базы данных: http://localhost:4040/contacts
 
-16. Устанавливаем axios
-    npm i axios
+14. Запускаем проект локально
+    npm start или
+    yarn start
